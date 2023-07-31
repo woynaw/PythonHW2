@@ -3,13 +3,9 @@ n = int(input())
 print("Введите m")
 m = int(input())
 print("Введите элементы первого массивa")
-a = []
-b = []
-for i in range(n):
-    a.append(int(input()))
+a = [int(input()) for item in range(n)]
 print("Введите элементы второго массивa")
-for i in range(m):
-    b.append(int(input()))
+b = [int(input()) for item in range(m)]
 c = a + b
 c = set(c)
 print(*c)
